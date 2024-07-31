@@ -37,7 +37,7 @@ const config: HardhatUserConfig = {
       accounts: [process.env.TESTNET_PRIVATE_KEY || ""],
       url: "http://rpc.stg.hypersonicl2.com/",
       chainId: 200200,
-      gasPrice: 20000000000, // 20 gwei
+      // gasPrice: 20000000000, // 20 gwei
     },
     optimismSepolia: {
       url: `https://sepolia.optimism.io`,
@@ -69,7 +69,7 @@ const config: HardhatUserConfig = {
         network: "osaki",
         chainId: 200200,
         urls: {
-          apiURL: "https://osaki-explorer.startale.com//api",
+          apiURL: "https://osaki-explorer.startale.com/api",
           browserURL: "https://osaki-explorer.startale.com/",
         },
       },

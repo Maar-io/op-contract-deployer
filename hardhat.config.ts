@@ -14,7 +14,15 @@ const config: HardhatUserConfig = {
     sources: "./contracts",
     tests: "./test",
   },
-  solidity: "0.8.24",
+  solidity: {
+    version: "0.8.24",
+    settings: {
+      optimizer: {
+        enabled: true,
+        runs: 200,
+      },
+    },
+  },
   networks: {
     localhost: {
       accounts: [process.env.TESTNET_PRIVATE_KEY || ""],
@@ -29,6 +37,7 @@ const config: HardhatUserConfig = {
       accounts: [process.env.TESTNET_PRIVATE_KEY || ""],
       url: "http://rpc.stg.hypersonicl2.com/",
       chainId: 200200,
+      gasPrice: 20000000000, // 20 gwei
     },
     optimismSepolia: {
       url: `https://sepolia.optimism.io`,

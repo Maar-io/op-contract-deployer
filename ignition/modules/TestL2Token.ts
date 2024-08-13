@@ -3,7 +3,7 @@
 import { buildModule } from "@nomicfoundation/hardhat-ignition/modules";
 
 const BRIDGE = "0x4200000000000000000000000000000000000010";
-const REMOTE_TOKEN = "0x08573Ff5695d96655cbCCBfC02c967DC91f254a6"
+const REMOTE_TOKEN = "0x091346A95dc9F54c7B0F98c830C1fC9c2fC9e8D5"
 const NAME = "TestL2Token";
 const SYMBOL = "L2T";
 

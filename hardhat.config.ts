@@ -37,12 +37,16 @@ const config: HardhatUserConfig = {
       accounts: [process.env.TESTNET_PRIVATE_KEY || ""],
       url: "http://rpc.stg.hypersonicl2.com/",
       chainId: 200200,
-      gasPrice: 20000000000, // 20 gwei
     },
     minato: {
       accounts: [process.env.TESTNET_PRIVATE_KEY || ""],
       url: "http://rpc.minato.soneium.org/",
       chainId: 1946,
+    },
+    opinu: {
+      accounts: [process.env.TESTNET_PRIVATE_KEY || ""],
+      url: "https://op-inu.astar.network/",
+      chainId: 170170,
     },
     optimismSepolia: {
       url: `https://sepolia.optimism.io`,
@@ -61,6 +65,7 @@ const config: HardhatUserConfig = {
       optimismSepolia: " ",
       optimism: " ",
       minato: " ",
+      opinu: " ",
     },
     customChains: [
       {
@@ -85,6 +90,14 @@ const config: HardhatUserConfig = {
         urls: {
           apiURL: "http://explorer-testnet.soneium.org//api",
           browserURL: "http://explorer-testnet.soneium.org/",
+        },
+      },
+      {
+        network: "opinu",
+        chainId: 170170,
+        urls: {
+          apiURL: "https://op-inu-explorer.astar.network/api",
+          browserURL: "https://op-inu-explorer.astar.network/",
         },
       },
       {

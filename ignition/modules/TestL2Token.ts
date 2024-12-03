@@ -1,9 +1,9 @@
-// npx hardhat ignition deploy ignition/modules/TestL2Token.ts --network optimismSepolia --verify
+// npx hardhat ignition deploy ignition/modules/TestL2Token.ts --network soneium
 
 import { buildModule } from "@nomicfoundation/hardhat-ignition/modules";
 
 const BRIDGE = "0x4200000000000000000000000000000000000010";
-const REMOTE_TOKEN = "0x5589BB8228C07c4e15558875fAf2B859f678d129"
+const REMOTE_TOKEN = "0x6d2Fefe017BE997C2000DEf7ca7856251a6B1b7f"
 const NAME = "TestL2Token";
 const SYMBOL = "TST";
 

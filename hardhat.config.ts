@@ -24,6 +24,15 @@ const config: HardhatUserConfig = {
     },
   },
   networks: {
+    mainnet: {
+      accounts: [process.env.PRIVATE_KEY || ""],
+      url: "https://eth-mainnet.public.blastapi.io"
+    },
+    soneium: {
+      accounts: [process.env.PRIVATE_KEY || ""],
+      url: "https://seq1-rpc.apse1.prd.hypersonicl2.com/",
+      chainId: 1868,
+    },
     localhost: {
       accounts: [process.env.TESTNET_PRIVATE_KEY || ""],
       url: "http://localhost:8545/"

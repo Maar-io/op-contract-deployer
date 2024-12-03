@@ -30,7 +30,7 @@ const config: HardhatUserConfig = {
     },
     soneium: {
       accounts: [process.env.PRIVATE_KEY || ""],
-      url: "https://seq1-rpc.apse1.prd.hypersonicl2.com/",
+      url: "",
       chainId: 1868,
     },
     localhost: {
